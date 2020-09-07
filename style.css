@@ -1,4 +1,24 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
 }
+
+.genres {
+    display: flex;
+    align-items: center;
+}
+
+.genres section {
+    display: flex;
+    width: 500px;
+    height: 100px;
+    flex-grow: 2;
+    align-items: center; 
+}
+
+.genres:nth-last-child(-n+2) {
+    display: flex;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
